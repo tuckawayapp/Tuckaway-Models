@@ -1,11 +1,11 @@
 # Tuckaway Models
 
-Model files that [Tuckaway](https://github.com/raviv-steinberg/Tuckaway-Releases) downloads for search by meaning, only
+Model files that [Tuckaway](https://github.com/tuckawayapp/Tuckaway-Releases) downloads for search by meaning, only
 when a user turns that feature on. The app checks each file's size and SHA-256 before it uses it. Nothing about the
 user or their clips is ever sent; the search runs entirely on their PC.
 
 Each model is one release, tagged by model and version. App releases are in
-[Tuckaway-Releases](https://github.com/raviv-steinberg/Tuckaway-Releases).
+[Tuckaway-Releases](https://github.com/tuckawayapp/Tuckaway-Releases).
 
 ## meaning-model-gte-1
 
@@ -33,8 +33,8 @@ This file is a modified copy of the onnx-community export. Two changes were made
 2. Its ONNX IR version was set from 10 to 9, so ONNX Runtime 1.19 can read it; the model uses nothing IR version 10
    added.
 
-The release's `NOTICE` gives the details. The tokenizer (`sentencepiece.bpe.model`) is not hosted here; Tuckaway
-downloads it from its original publisher.
+The release's `NOTICE` gives the details. The release also holds the tokenizer (`sentencepiece.bpe.model`), an
+unmodified copy of XLM-RoBERTa's SentencePiece vocabulary, so Tuckaway downloads both files from this one release.
 
 ## License
 
